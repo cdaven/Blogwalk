@@ -1,0 +1,114 @@
+
+Koden i detta arkiv är en kopia av bloggportalen Blogwalk.
+All kod är fri att använda enligt LGPL-licensen.
+
+Ursprunglig kodare: Christian Davén (förutom utf8.php)
+
+
+----------------
+ INNEHÅLL
+----------------
+
+Filer som används löpande
+-------------------------
+
+counter.php
+
+	Smart räknare som lagrar loggdata i mySQL-databas och genererar statistik
+
+date.php
+
+	Datumfunktioner; delvis för formatering
+
+db.php
+
+	Databashantering; alla mer avancerade transaktioner
+
+html_admin.php
+
+	HTML-generering av administrationsfunktioner
+
+html_entities.php
+
+	Översättningstabeller mellan HTML-entiteter och tecknen
+
+html.php
+
+	HTML-generering av gränssnittet
+
+index.php
+
+	Huvudfilen; den som håller ihop övriga filer
+
+keywords.php
+
+	Extraherar nyckelord ur löpande text; inklusive enkel stemmer
+
+lemonad.php
+
+	Hämtar och parsar XML-flöde från Var är du?
+
+login.php
+
+	Autentisering av administratör
+
+string.php
+
+	Diverse stränghantering
+
+syndication.php
+
+	Skapar RSS 2.0-flöden från databas; för etiketter, super-etiketter och alla inlägg
+
+texts.php
+
+	Informationstexter
+
+utf8.php (av Henri Sivonen)
+
+	Hantering av unicode-strängar enligt UTF-8-tabellen
+
+xmlparse.php
+
+	Generell XML-parser samt specialiserad kod för Atom, RSS och RDF
+
+
+
+Filer som körs som cron-jobb
+----------------------------
+
+analyse_tools.php
+
+	Identifierar bloggverktyg för alla inlagda bloggar (en lista med blogg-URL:er)
+
+fetch_bookmarks.php
+
+	Hämtar länkar för de 100 vanligaste etiketterna från del.icio.us och Furl
+
+fetch_icons.php
+
+	Hämtar "favicon.ico" för alla bloggar
+
+generate_stats.php
+
+	Genererar statistik över bloggandet, inklusive diagram (använder kod från Sparkline-projektet)
+
+harvest_links.php
+
+	Går igenom XML-flöden och plockar ut de vanligaste länkarna
+
+nightly.php
+
+	Kompilerar taggmoln och super-etiketter
+
+update_db.php
+
+	Hämtar nya blogginlägg från Var är du?, inlägg från utvecklingsbloggen etc
+
+weekly.php
+
+	Samlar in länkar och genererar kluster av relaterade inlägg
+
+wordburstz.php
+
+	Sammanställer "word bursts", dvs. veckans mest framträdande ord
