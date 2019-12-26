@@ -5,12 +5,9 @@ All kod är fri att använda enligt LGPL-licensen.
 Ursprunglig kodare: Christian Davén (förutom utf8.php)
 
 
-----------------
- INNEHÅLL
-----------------
+# INNEHÅLL
 
-Filer som används löpande
--------------------------
+## Filer som används löpande
 
 counter.php
 
@@ -74,8 +71,7 @@ xmlparse.php
 
 
 
-Filer som körs som cron-jobb
-----------------------------
+## Filer som körs som cron-jobb
 
 analyse_tools.php
 
@@ -112,3 +108,7 @@ weekly.php
 wordburstz.php
 
 	Sammanställer "word bursts", dvs. veckans mest framträdande ord
+
+### Databasskript
+
+Se också database.sql, som bygger upp databasen i MySQL.
